@@ -92,10 +92,10 @@
         "command": "list.select",
         "when": "listFocus && !inputFocus"
       },
-      // Close serach with escape
+      // Close search with escape
       {
         "key": "escape",
         "command": "workbench.action.toggleSidebarVisibility",
-        "when": "sideBarVisible"
+        "when": "sideBarVisible && focusedView == workbench.view.search"
       }
 ]
