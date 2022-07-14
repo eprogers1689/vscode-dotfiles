@@ -24,7 +24,7 @@
         },
         {
             "before": ["<leader>", "t", "r"],
-            "commands": ["workbench.action.toggleSidebarVisibility"],
+            "commands": ["workbench.files.action.focusFilesExplorer"],
         },
         // Easy way to hide the peksy activitybar... boo activity bar
         {
@@ -51,6 +51,11 @@
             "before": ["<leader>", "s", "p"],
             "commands": ["workbench.view.search"]
         }, 
+        // Find in files
+        {
+            "before": ["<leader>", "f", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
         // Select Tab by number
         {
             "before": ["<leader>", "1"],

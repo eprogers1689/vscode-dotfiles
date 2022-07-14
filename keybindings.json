@@ -9,6 +9,7 @@
         "key": "ctrl+cmd+m", // Mac
         "command": "workbench.action.toggleMaximizedPanel"
     },
+
     // Navigate Splits
     {
         "key": "ctrl+h",
@@ -26,6 +27,7 @@
         "key": "ctrl+j",
         "command": "workbench.action.navigateDown"
     },
+
     // Move Tab to different split
     {
         "key": "ctrl+alt+k", // Linux
@@ -59,11 +61,13 @@
         "key": "ctrl+cmd+l", // Mac
         "command": "workbench.action.moveEditorToRightGroup"
     },
+
     // Browser-like tab close
     {
         "key": "ctrl+w",
         "command": "workbench.action.closeActiveEditor"
     },
+
     // Vimium-like change tabs
     {
         "key": "shift+j",
@@ -92,10 +96,15 @@
         "command": "list.select",
         "when": "listFocus && !inputFocus"
       },
-      // Close search with escape
+      // File Search Helpers
       {
         "key": "escape",
         "command": "workbench.action.toggleSidebarVisibility",
         "when": "sideBarVisible && focusedView == workbench.view.search"
-      }
+      },
+      {
+        "key": "enter",
+        "command": "search.action.focusSearchList",
+        "when": "sideBarVisible && focusedView == workbench.view.search"
+      },
 ]
