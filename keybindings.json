@@ -2,7 +2,11 @@
 [
     // Make Pane Full Screen
     {
-        "key": "ctrl+alt+m",
+        "key": "ctrl+alt+m", // Linux
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "ctrl+cmd+m", // Mac
         "command": "workbench.action.toggleMaximizedPanel"
     },
     // Navigate Splits
@@ -24,19 +28,35 @@
     },
     // Move Tab to different split
     {
-        "key": "ctrl+alt+k",
+        "key": "ctrl+alt+k", // Linux
         "command": "workbench.action.moveEditorToAboveGroup"
     },
     {
-        "key": "ctrl+alt+j",
+        "key": "ctrl+cmd+k", // Mac
+        "command": "workbench.action.moveEditorToAboveGroup"
+    },
+    {
+        "key": "ctrl+alt+j", // Linux
         "command": "workbench.action.moveEditorToBelowGroup"
     },
     {
-        "key": "ctrl+alt+h",
+        "key": "ctrl+cmd+j", // Mac
+        "command": "workbench.action.moveEditorToBelowGroup"
+    },
+    {
+        "key": "ctrl+alt+h", // Linux
         "command": "workbench.action.moveEditorToLeftGroup"
     },
     {
-        "key": "ctrl+alt+l",
+        "key": "ctrl+cmd+h", // Mac
+        "command": "workbench.action.moveEditorToLeftGroup"
+    },
+    {
+        "key": "ctrl+alt+l", // Linux
+        "command": "workbench.action.moveEditorToRightGroup"
+    },
+    {
+        "key": "ctrl+cmd+l", // Mac
         "command": "workbench.action.moveEditorToRightGroup"
     },
     // Browser-like tab close
@@ -55,4 +75,27 @@
         "command": "workbench.action.nextEditor",
         "when": "inputFocus && vim.mode == 'Normal'"
     },
+
+    // Tell mac to behave like it should with the file tree
+    {
+        "key": "cmd+enter",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+      },
+      {
+        "key": "enter",
+        "command": "-renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+      },
+      {
+        "key": "enter",
+        "command": "list.select",
+        "when": "listFocus && !inputFocus"
+      },
+      // Close serach with escape
+      {
+        "key": "escape",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "sideBarVisible"
+      }
 ]

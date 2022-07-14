@@ -19,7 +19,7 @@
         // make explorer great again
         {
             "before": ["<leader>", "g", "r"],
-            "commands": ["workbench.view.explorer"],
+            "commands": ["workbench.files.action.showActiveFileInExplorer"],
             "when": "viewContainer.workbench.view.explorer.enabled"
         },
         {
@@ -41,10 +41,16 @@
             "before": ["<leader>", "m", "m"],
             "commands": ["editor.action.toggleMinimap"],
         },
+        // Find and Repalce
         {
             "before": ["<leader>", "f", "r"],
             "commands": ["editor.action.startFindReplaceAction"],
         },
+        // Text Search across files in repo
+        {
+            "before": ["<leader>", "s", "p"],
+            "commands": ["workbench.view.search"]
+        }, 
         // Select Tab by number
         {
             "before": ["<leader>", "1"],
