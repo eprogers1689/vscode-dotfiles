@@ -2,7 +2,7 @@
 
 echo "Checking for vscodevim"
 # check for dependency...
-if ls ${HOME}/.vscode/extensions/vscodevim* >1 /dev/null 2>&1; then
+if ls ${HOME}/.vscode/extensions/vscodevim* 1> /dev/null 2>&1; then
     echo "Great, you have vscodevim installed. Make sure its also enabled."
     echo ""
 else
