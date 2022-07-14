@@ -1,0 +1,90 @@
+{
+    "workbench.colorTheme": "Monokai",
+    "workbench.startupEditor": "none",
+    "breadcrumbs.enabled": false,
+    "editor.scrollbar.verticalScrollbarSize": 0,
+    "terminal.integrated.copyOnSelection": true,
+    "vim.useCtrlKeys": true,
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // make splits great again
+        {
+            "before": ["<leader>", "\\"],
+            "commands": ["workbench.action.splitEditor"]
+        },
+        {
+            "before": ["<leader>", "-"],
+            "commands": ["workbench.action.splitEditorDown"]
+        },
+        // make explorer great again
+        {
+            "before": ["<leader>", "g", "r"],
+            "commands": ["workbench.view.explorer"],
+            "when": "viewContainer.workbench.view.explorer.enabled"
+        },
+        {
+            "before": ["<leader>", "t", "r"],
+            "commands": ["workbench.action.toggleSidebarVisibility"],
+        },
+        // Easy way to hide the peksy activitybar... boo activity bar
+        {
+            "before": ["<leader>", "a", "b"],
+            "commands": ["workbench.action.toggleActivityBarVisibility"],
+        },
+        // Toggle zen mode
+        {
+            "before": ["<leader>", "z", "m"],
+            "commands": ["workbench.action.toggleZenMode"],
+        },
+        // Toggle minimap
+        {
+            "before": ["<leader>", "m", "m"],
+            "commands": ["editor.action.toggleMinimap"],
+        },
+        {
+            "before": ["<leader>", "f", "r"],
+            "commands": ["editor.action.startFindReplaceAction"],
+        },
+        // Select Tab by number
+        {
+            "before": ["<leader>", "1"],
+            "commands": ["workbench.action.openEditorAtIndex1"]
+        },
+        {
+            "before": ["<leader>", "2"],
+            "commands": ["workbench.action.openEditorAtIndex2"]
+        },
+        {
+            "before": ["<leader>", "3"],
+            "commands": ["workbench.action.openEditorAtIndex3"]
+        },
+        {
+            "before": ["<leader>", "4"],
+            "commands": ["workbench.action.openEditorAtIndex4"]
+        },
+        {
+            "before": ["<leader>", "5"],
+            "commands": ["workbench.action.openEditorAtIndex5"]
+        },
+        {
+            "before": ["<leader>", "6"],
+            "commands": ["workbench.action.openEditorAtIndex6"]
+        },
+        {
+            "before": ["<leader>", "7"],
+            "commands": ["workbench.action.openEditorAtIndex7"]
+        },
+        {
+            "before": ["<leader>", "8"],
+            "commands": ["workbench.action.openEditorAtIndex8"]
+        },
+        {
+            "before": ["<leader>", "9"],
+            "commands": ["workbench.action.openEditorAtIndex9"]
+        },
+    ],
+    "editor.lineNumbers": "on",
+    "workbench.activityBar.visible": false,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all"
+}
