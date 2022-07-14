@@ -16,7 +16,7 @@ fi
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     dotfile_dir="${HOME}/.config/Code/User/"
 elif [[ "$OSTYPE" == "darwin"* ]]; then
-    dotfile_dir="${HOME}/Library/Application \Support/Code/User/"
+    dotfile_dir="${HOME}/Library/Application Support/Code/User/"
 fi
 settings_file="${dotfile_dir}settings.json"
 keybindings_file="${dotfile_dir}keybindings.json"
