@@ -98,13 +98,14 @@
       },
       // File Search Helpers
       {
-        "key": "escape",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "sideBarVisible && focusedView == workbench.view.search"
-      },
-      {
         "key": "enter",
         "command": "search.action.focusSearchList",
-        "when": "sideBarVisible && focusedView == workbench.view.search"
+        "when": "sideBarFocus && focusedView == workbench.view.search"
       },
+      // Close Sidebar with Escape
+      {
+        "key": "escape",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "sideBarFocus"
+      }
 ]
