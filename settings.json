@@ -1,7 +1,6 @@
 {
     "workbench.colorTheme": "Monokai",
     "workbench.startupEditor": "none",
-    "breadcrumbs.enabled": false,
     "editor.scrollbar.verticalScrollbarSize": 0,
     "terminal.integrated.copyOnSelection": true,
     "vim.useCtrlKeys": true,
@@ -40,6 +39,11 @@
         {
             "before": ["<leader>", "m", "m"],
             "commands": ["editor.action.toggleMinimap"],
+        },
+        // Toggle breadcrumb
+        {
+            "before": ["<leader>", "b", "c"],
+            "commands": ["breadcrumbs.toggle"],
         },
         // Find and Repalce
         {
@@ -97,5 +101,6 @@
     "editor.lineNumbers": "on",
     "workbench.activityBar.visible": false,
     "editor.minimap.enabled": false,
-    "editor.renderWhitespace": "all"
+    "editor.renderWhitespace": "all",
+    "breadcrumbs.enabled": false
 }
