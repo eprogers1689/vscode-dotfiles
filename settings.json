@@ -97,10 +97,15 @@
             "before": ["<leader>", "9"],
             "commands": ["workbench.action.openEditorAtIndex9"]
         },
+        // Markdown Preview
+        {
+            "before": ["<leader>", "m", "p"],
+            "commands": ["markdown.showPreviewToSide"]
+        }
     ],
     "editor.lineNumbers": "on",
     "workbench.activityBar.visible": false,
-    "editor.minimap.enabled": false,
     "editor.renderWhitespace": "all",
-    "breadcrumbs.enabled": false
+    "breadcrumbs.enabled": false,
+    "editor.minimap.enabled": false
 }
