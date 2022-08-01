@@ -1,5 +1,8 @@
 {
     "workbench.colorTheme": "Monokai",
+    "workbench.colorCustomizations": {
+        "tab.activeBorderTop": "#E6DB74"
+    },
     "workbench.startupEditor": "none",
     "editor.scrollbar.verticalScrollbarSize": 0,
     "terminal.integrated.copyOnSelection": true,
