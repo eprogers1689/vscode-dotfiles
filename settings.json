@@ -1,7 +1,9 @@
 {
     "workbench.colorTheme": "Monokai",
     "workbench.colorCustomizations": {
-        "tab.activeBorderTop": "#E6DB74"
+        "tab.activeBorderTop": "#e7e8df",
+        "tab.activeBackground": "#34352f",
+        "tab.inactiveBackground": "#272822",
     },
     "workbench.startupEditor": "none",
     "editor.scrollbar.verticalScrollbarSize": 0,
