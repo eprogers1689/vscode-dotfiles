@@ -11,6 +11,17 @@ else
     echo "https://marketplace.visualstudio.com/items?itemName=vscodevim.vim"
     exit
 fi
+echo "Checking for goto-previous-buffer"
+# check for dependency...
+if ls ${HOME}/.vscode/extensions/serafeim.goto-previous-buffer* 1> /dev/null 2>&1; then
+    echo "Great, you have go-previous-buffer installed. Make sure its also enabled."
+    echo ""
+else
+    echo "You should go install goto-previous-buffer, otherwise these dotfiles are not as good as they could be. Comeback after you've done that, or rip this part out of the install script and do your own thing..."
+    echo ""
+    echo "https://marketplace.visualstudio.com/items?itemName=Serafeim.goto-previous-buffer"
+    exit
+fi
 
 # determine location of settings/keybindings
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then

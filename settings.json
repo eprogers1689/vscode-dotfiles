@@ -10,7 +10,7 @@
     "terminal.integrated.copyOnSelection": true,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
-    "vim.leader": "<space>",
+    "vim.leader": "<Space>",
     "vim.normalModeKeyBindingsNonRecursive": [
         // make splits great again
         {
@@ -107,11 +107,22 @@
         {
             "before": ["<leader>", "m", "p"],
             "commands": ["markdown.showPreviewToSide"]
+        },
+        // Go to source
+        {
+            "before": ["<leader>", "d", "f"],
+            "commands": ["editor.action.revealDefinition"]
+        },
+        // Navigate back
+        // VERY weird gotchya with MAC here - you may need to disable a DUMB setting where <space><space> on MAC is mapped to add a period. 
+        // Go into System Preferences -> Keyboard -> [Click the text tab] -> at the right there are a few checkbox you should uncheck the "Add period with double-space" option
+        {
+            "before": ["<leader>", "Space"],
+            "commands": ["extension.goto-previous-buffer"]
         }
     ],
     "editor.lineNumbers": "on",
     "workbench.activityBar.visible": false,
     "editor.renderWhitespace": "all",
-    "editor.minimap.enabled": false,
-    "breadcrumbs.enabled": false
+    "editor.minimap.enabled": false
 }
