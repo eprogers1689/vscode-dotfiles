@@ -124,5 +124,6 @@
     "editor.lineNumbers": "on",
     "workbench.activityBar.visible": false,
     "editor.renderWhitespace": "all",
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false
 }

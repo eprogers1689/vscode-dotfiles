@@ -82,46 +82,46 @@
 
     // Tell mac to behave like it should with the file tree
     {
-        "key": "cmd+enter",
-        "command": "renameFile",
-        "when": "explorerViewletVisible && filesExplorerFocus"
-      },
-      {
-        "key": "enter",
-        "command": "-renameFile",
-        "when": "explorerViewletVisible && filesExplorerFocus"
-      },
-      {
-        "key": "enter",
-        "command": "list.select",
-        "when": "listFocus && !inputFocus"
-      },
-      // new file and new folder
-      {
-        "key": "n",
-        "command": "explorer.newFile",
-        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
-      },
-      {
-        "key": "shift+n",
-        "command": "explorer.newFolder",
-        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
-      },
-      {
-        "key": "x",
-        "command": "deleteFile",
-        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
-      },
-      // File Search Helpers
-      {
-        "key": "enter",
-        "command": "search.action.focusSearchList",
-        "when": "sideBarFocus && focusedView == workbench.view.search"
-      },
-      // Close Sidebar with Escape
-      {
-        "key": "escape",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "sideBarFocus"
-      }
+      "key": "enter",
+      "command": "-renameFile",
+      "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+      "key": "enter",
+      "command": "list.select",
+      "when": "listFocus && !inputFocus"
+    },
+    // Work with files in file tree
+    {
+      "key": "n",
+      "command": "explorer.newFile",
+      "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    {
+      "key": "shift+n",
+      "command": "explorer.newFolder",
+      "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    {
+      "key": "x",
+      "command": "deleteFile",
+      "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    {
+      "key": "r",
+      "command": "renameFile",
+      "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    // File Search Helpers
+    {
+      "key": "enter",
+      "command": "search.action.focusSearchList",
+      "when": "sideBarFocus && focusedView == workbench.view.search"
+    },
+    // Close Sidebar with Escape
+    {
+      "key": "escape",
+      "command": "workbench.action.toggleSidebarVisibility",
+      "when": "sideBarFocus"
+    }
 ]
