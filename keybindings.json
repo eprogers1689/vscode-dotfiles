@@ -96,6 +96,22 @@
         "command": "list.select",
         "when": "listFocus && !inputFocus"
       },
+      // new file and new folder
+      {
+        "key": "n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+      },
+      {
+        "key": "shift+n",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+      },
+      {
+        "key": "x",
+        "command": "deleteFile",
+        "when": "explorerViewletVisible && filesExplorerFocus"
+      },
       // File Search Helpers
       {
         "key": "enter",
