@@ -100,17 +100,17 @@
       {
         "key": "n",
         "command": "explorer.newFile",
-        "when": "explorerViewletVisible && filesExplorerFocus"
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
       },
       {
         "key": "shift+n",
         "command": "explorer.newFolder",
-        "when": "explorerViewletVisible && filesExplorerFocus"
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
       },
       {
         "key": "x",
         "command": "deleteFile",
-        "when": "explorerViewletVisible && filesExplorerFocus"
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
       },
       // File Search Helpers
       {
