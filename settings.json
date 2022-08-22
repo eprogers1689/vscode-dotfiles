@@ -60,7 +60,7 @@
         {
             "before": ["<leader>", "s", "p"],
             "commands": ["workbench.view.search"]
-        }, 
+        },
         // Find in files
         {
             "before": ["<leader>", "f", "f"],
@@ -113,8 +113,13 @@
             "before": ["<leader>", "d", "f"],
             "commands": ["editor.action.revealDefinition"]
         },
+        // Follow Link
+        {
+            "before": ["<leader>", "f", "l"],
+            "commands": ["editor.action.openLink"]
+        },
         // Navigate back
-        // VERY weird gotchya with MAC here - you may need to disable a DUMB setting where <space><space> on MAC is mapped to add a period. 
+        // VERY weird gotchya with MAC here - you may need to disable a DUMB setting where <space><space> on MAC is mapped to add a period.
         // Go into System Preferences -> Keyboard -> [Click the text tab] -> at the right there are a few checkbox you should uncheck the "Add period with double-space" option
         {
             "before": ["<leader>", "Space"],
@@ -125,5 +130,6 @@
     "workbench.activityBar.visible": false,
     "editor.renderWhitespace": "all",
     "editor.minimap.enabled": false,
-    "breadcrumbs.enabled": false
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "explorer.confirmDelete": false
 }

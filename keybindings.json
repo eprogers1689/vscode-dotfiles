@@ -72,12 +72,12 @@
     {
         "key": "shift+j",
         "command": "workbench.action.previousEditor",
-        "when": "inputFocus && vim.mode == 'Normal'"
+        "when": "editorTextFocus && vim.mode == 'Normal'"
     },
     {
         "key": "shift+k",
         "command": "workbench.action.nextEditor",
-        "when": "inputFocus && vim.mode == 'Normal'"
+        "when": "editorTextFocus && vim.mode == 'Normal'"
     },
 
     // Tell mac to behave like it should with the file tree
