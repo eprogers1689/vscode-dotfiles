@@ -131,5 +131,9 @@
     "editor.renderWhitespace": "all",
     "editor.minimap.enabled": false,
     "terminal.integrated.enableMultiLinePasteWarning": false,
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "extensions.ignoreRecommendations": true,
+    "[typescript]": {
+      "editor.tabSize": 2
+    }
 }
