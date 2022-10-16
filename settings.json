@@ -7,6 +7,7 @@
     },
     "workbench.startupEditor": "none",
     "editor.scrollbar.verticalScrollbarSize": 0,
+    "editor.tabCompletion": "on",
     "terminal.integrated.copyOnSelection": true,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
@@ -125,5 +126,5 @@
     "workbench.activityBar.visible": false,
     "editor.renderWhitespace": "all",
     "editor.minimap.enabled": false,
-    "breadcrumbs.enabled": false
+    "extensions.ignoreRecommendations": true
 }
