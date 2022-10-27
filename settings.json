@@ -15,116 +15,248 @@
     "vim.normalModeKeyBindingsNonRecursive": [
         // make splits great again
         {
-            "before": ["<leader>", "\\"],
-            "commands": ["workbench.action.splitEditor"]
+            "before": [
+                "<leader>",
+                "\\"
+            ],
+            "commands": [
+                "workbench.action.splitEditor"
+            ]
         },
         {
-            "before": ["<leader>", "-"],
-            "commands": ["workbench.action.splitEditorDown"]
+            "before": [
+                "<leader>",
+                "-"
+            ],
+            "commands": [
+                "workbench.action.splitEditorDown"
+            ]
         },
         // make explorer great again
         {
-            "before": ["<leader>", "g", "r"],
-            "commands": ["workbench.files.action.showActiveFileInExplorer"],
+            "before": [
+                "<leader>",
+                "g",
+                "r"
+            ],
+            "commands": [
+                "workbench.files.action.showActiveFileInExplorer"
+            ],
             "when": "viewContainer.workbench.view.explorer.enabled"
         },
         {
-            "before": ["<leader>", "t", "r"],
-            "commands": ["workbench.files.action.focusFilesExplorer"],
+            "before": [
+                "<leader>",
+                "t",
+                "r"
+            ],
+            "commands": [
+                "workbench.files.action.focusFilesExplorer"
+            ],
         },
         // Easy way to hide the peksy activitybar... boo activity bar
         {
-            "before": ["<leader>", "a", "b"],
-            "commands": ["workbench.action.toggleActivityBarVisibility"],
+            "before": [
+                "<leader>",
+                "a",
+                "b"
+            ],
+            "commands": [
+                "workbench.action.toggleActivityBarVisibility"
+            ],
         },
         // Toggle zen mode
         {
-            "before": ["<leader>", "z", "m"],
-            "commands": ["workbench.action.toggleZenMode"],
+            "before": [
+                "<leader>",
+                "z",
+                "m"
+            ],
+            "commands": [
+                "workbench.action.toggleZenMode"
+            ],
         },
         // Toggle minimap
         {
-            "before": ["<leader>", "m", "m"],
-            "commands": ["editor.action.toggleMinimap"],
+            "before": [
+                "<leader>",
+                "m",
+                "m"
+            ],
+            "commands": [
+                "editor.action.toggleMinimap"
+            ],
         },
         // Toggle breadcrumb
         {
-            "before": ["<leader>", "b", "c"],
-            "commands": ["breadcrumbs.toggle"],
+            "before": [
+                "<leader>",
+                "b",
+                "c"
+            ],
+            "commands": [
+                "breadcrumbs.toggle"
+            ],
         },
         // Find and Repalce
         {
-            "before": ["<leader>", "f", "r"],
-            "commands": ["editor.action.startFindReplaceAction"],
+            "before": [
+                "<leader>",
+                "f",
+                "r"
+            ],
+            "commands": [
+                "editor.action.startFindReplaceAction"
+            ],
         },
         // Text Search across files in repo
         {
-            "before": ["<leader>", "s", "p"],
-            "commands": ["workbench.view.search"]
+            "before": [
+                "<leader>",
+                "s",
+                "p"
+            ],
+            "commands": [
+                "workbench.view.search"
+            ]
         },
         // Find in files
         {
-            "before": ["<leader>", "f", "f"],
-            "commands": ["workbench.action.quickOpen"]
+            "before": [
+                "<leader>",
+                "f",
+                "f"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
         },
         // Select Tab by number
         {
-            "before": ["<leader>", "1"],
-            "commands": ["workbench.action.openEditorAtIndex1"]
+            "before": [
+                "<leader>",
+                "1"
+            ],
+            "commands": [
+                "workbench.action.openEditorAtIndex1"
+            ]
         },
         {
-            "before": ["<leader>", "2"],
-            "commands": ["workbench.action.openEditorAtIndex2"]
+            "before": [
+                "<leader>",
+                "2"
+            ],
+            "commands": [
+                "workbench.action.openEditorAtIndex2"
+            ]
         },
         {
-            "before": ["<leader>", "3"],
-            "commands": ["workbench.action.openEditorAtIndex3"]
+            "before": [
+                "<leader>",
+                "3"
+            ],
+            "commands": [
+                "workbench.action.openEditorAtIndex3"
+            ]
         },
         {
-            "before": ["<leader>", "4"],
-            "commands": ["workbench.action.openEditorAtIndex4"]
+            "before": [
+                "<leader>",
+                "4"
+            ],
+            "commands": [
+                "workbench.action.openEditorAtIndex4"
+            ]
         },
         {
-            "before": ["<leader>", "5"],
-            "commands": ["workbench.action.openEditorAtIndex5"]
+            "before": [
+                "<leader>",
+                "5"
+            ],
+            "commands": [
+                "workbench.action.openEditorAtIndex5"
+            ]
         },
         {
-            "before": ["<leader>", "6"],
-            "commands": ["workbench.action.openEditorAtIndex6"]
+            "before": [
+                "<leader>",
+                "6"
+            ],
+            "commands": [
+                "workbench.action.openEditorAtIndex6"
+            ]
         },
         {
-            "before": ["<leader>", "7"],
-            "commands": ["workbench.action.openEditorAtIndex7"]
+            "before": [
+                "<leader>",
+                "7"
+            ],
+            "commands": [
+                "workbench.action.openEditorAtIndex7"
+            ]
         },
         {
-            "before": ["<leader>", "8"],
-            "commands": ["workbench.action.openEditorAtIndex8"]
+            "before": [
+                "<leader>",
+                "8"
+            ],
+            "commands": [
+                "workbench.action.openEditorAtIndex8"
+            ]
         },
         {
-            "before": ["<leader>", "9"],
-            "commands": ["workbench.action.openEditorAtIndex9"]
+            "before": [
+                "<leader>",
+                "9"
+            ],
+            "commands": [
+                "workbench.action.openEditorAtIndex9"
+            ]
         },
         // Markdown Preview
         {
-            "before": ["<leader>", "m", "p"],
-            "commands": ["markdown.showPreviewToSide"]
+            "before": [
+                "<leader>",
+                "m",
+                "p"
+            ],
+            "commands": [
+                "markdown.showPreviewToSide"
+            ]
         },
         // Go to source
         {
-            "before": ["<leader>", "d", "f"],
-            "commands": ["editor.action.revealDefinition"]
+            "before": [
+                "<leader>",
+                "d",
+                "f"
+            ],
+            "commands": [
+                "editor.action.revealDefinition"
+            ]
         },
         // Follow Link
         {
-            "before": ["<leader>", "f", "l"],
-            "commands": ["editor.action.openLink"]
+            "before": [
+                "<leader>",
+                "f",
+                "l"
+            ],
+            "commands": [
+                "editor.action.openLink"
+            ]
         },
         // Navigate back
         // VERY weird gotchya with MAC here - you may need to disable a DUMB setting where <space><space> on MAC is mapped to add a period.
         // Go into System Preferences -> Keyboard -> [Click the text tab] -> at the right there are a few checkbox you should uncheck the "Add period with double-space" option
         {
-            "before": ["<leader>", "Space"],
-            "commands": ["extension.goto-previous-buffer"]
+            "before": [
+                "<leader>",
+                "Space"
+            ],
+            "commands": [
+                "extension.goto-previous-buffer"
+            ]
         }
     ],
     "editor.lineNumbers": "on",
