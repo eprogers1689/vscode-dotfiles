@@ -7,6 +7,7 @@ These are dotfiles that approximate my vim/tmux key bindings. Fork and enjoy.
 1. Read through the install script `./install.sh`
 1. Install vscodevim - https://marketplace.visualstudio.com/items?itemName=vscodevim.vim
 1. Install goto-previous-buffer - https://marketplace.visualstudio.com/items?itemName=Serafeim.goto-previous-buffer
+1. Install trailing space - https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces#show-status-bar-message
 1. Run `bash ./install.sh`
 
 ## Uninstallation
