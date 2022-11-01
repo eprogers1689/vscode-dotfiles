@@ -235,7 +235,7 @@
                 "editor.action.revealDefinition"
             ]
         },
-        // Follow Link
+        // Follow Link - useful for following a link in a Search File (i.e. the file created after you perform a search then click the 'Open in editor' button)
         {
             "before": [
                 "<leader>",
@@ -258,7 +258,7 @@
                 "extension.goto-previous-buffer"
             ]
         },
-        // Follow Link
+        // Delete White Space Manully
         {
             "before": [
                 "<leader>",
@@ -268,7 +268,19 @@
             "commands": [
                 "trailing-spaces.deleteTrailingSpaces"
             ]
+        },
+        // Keep Preview Tab Oben
+        {
+            "before": [
+                "<leader>",
+                "k",
+                "o"
+            ],
+            "commands": [
+                "workbench.action.keepEditor"
+            ]
         }
+
     ],
     "editor.lineNumbers": "on",
     "workbench.activityBar.visible": false,
