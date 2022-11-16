@@ -72,12 +72,12 @@
     {
         "key": "shift+j",
         "command": "workbench.action.previousEditor",
-        "when": "editorTextFocus && vim.mode == 'Normal'"
+        "when": "vim.mode == 'Normal'"
     },
     {
         "key": "shift+k",
         "command": "workbench.action.nextEditor",
-        "when": "editorTextFocus && vim.mode == 'Normal'"
+        "when": "vim.mode == 'Normal'"
     },
 
     // Tell mac to behave like it should with the file tree
@@ -129,5 +129,16 @@
         "key": "ctrl+shift+enter",
         "command": "workbench.action.terminal.runSelectedText",
         "when": "editorTextFocus && editorHasSelection"
+    },
+    // Open terminal (in tab based on terminal.integrated.defaultLocation in settings.json)
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "-workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
     }
 ]
