@@ -279,13 +279,52 @@
             "commands": [
                 "workbench.action.keepEditor"
             ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "v",
+                "i"
+            ],
+            "commands": [
+                "editor.action.smartSelect.grow"
+            ]
+        },
+        // Sort imports
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "i"
+            ],
+            "commands": [
+                "editor.action.organizeImports"
+            ]
         }
 
     ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "g"
+            ],
+            "commands": [
+                "editor.action.smartSelect.grow"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s"
+            ],
+            "commands": [
+                "editor.action.smartSelect.shrink"
+            ]
+        }
+    ],
     "editor.lineNumbers": "on",
-    "workbench.activityBar.visible": false,
     "editor.renderWhitespace": "all",
-    "editor.minimap.enabled": false,
     "extensions.ignoreRecommendations": true,
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "explorer.confirmDelete": false,
@@ -295,4 +334,39 @@
     "trailing-spaces.backgroundColor": "rgba(255,0,0,0.5)",
     "trailing-spaces.borderColor": "rgba(255,255,0,0.5)",
     "trailing-spaces.trimOnSave": true,
+    "git.ignoreMissingGitWarning": true,
+    "cSpell.userWords": [
+        "awsapigateway",
+        "boto",
+        "cicd",
+        "dynatrace",
+        "entreleadership",
+        "esmodule",
+        "Fargate",
+        "firelens",
+        "jwks",
+        "lampogroup",
+        "logglytoken",
+        "martech",
+        "newrelic",
+        "PGPORT",
+        "powertools",
+        "pulumi",
+        "realestate",
+        "Redrive",
+        "rscom",
+        "scaffolder",
+        "smartdollar",
+        "tfstate",
+        "unvalidated",
+        "websystems"
+    ],
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "editor.minimap.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.scrollback": 20000,
+    "liveshare.anonymousGuestApproval": "reject",
+    "workbench.activityBar.visible": false,
 }
