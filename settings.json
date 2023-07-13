@@ -300,7 +300,49 @@
             "commands": [
                 "editor.action.organizeImports"
             ]
-        }
+        },
+        // Fold Code
+        {
+            "before":[
+                "<leader>",
+                "f",
+                "d"
+            ],
+            "commands": [
+                "editor.foldRecursively"
+            ]
+        },
+        {
+            "before":[
+                "<leader>",
+                "u",
+                "f"
+            ],
+            "commands": [
+                "editor.unfoldRecursively"
+            ]
+        },
+        {
+            "before":[
+                "<leader>",
+                "f",
+                "a"
+            ],
+            "commands": [
+                "editor.foldAll"
+            ]
+        },
+        {
+            "before":[
+                "<leader>",
+                "u",
+                "f",
+                "a"
+            ],
+            "commands": [
+                "editor.unfoldAll"
+            ]
+        },
 
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
@@ -337,26 +379,36 @@
     "git.ignoreMissingGitWarning": true,
     "cSpell.userWords": [
         "awsapigateway",
+        "awslog",
+        "awslogs",
         "boto",
         "cicd",
         "dynatrace",
         "entreleadership",
         "esmodule",
+        "everydollar",
+        "faas",
         "Fargate",
+        "financialwellness",
         "firelens",
+        "innersource",
         "jwks",
         "lampogroup",
+        "loggly",
         "logglytoken",
         "martech",
+        "mulesoft",
         "newrelic",
         "PGPORT",
         "powertools",
         "pulumi",
+        "pytest",
         "realestate",
         "Redrive",
         "rscom",
         "scaffolder",
         "smartdollar",
+        "teamname",
         "tfstate",
         "unvalidated",
         "websystems"
@@ -369,4 +421,5 @@
     "terminal.integrated.scrollback": 20000,
     "liveshare.anonymousGuestApproval": "reject",
     "workbench.activityBar.visible": false,
+    "vim.foldfix": true,
 }
