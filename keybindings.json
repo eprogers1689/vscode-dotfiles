@@ -65,7 +65,8 @@
     // Browser-like tab close
     {
         "key": "ctrl+w",
-        "command": "workbench.action.closeActiveEditor"
+        "command": "workbench.action.closeActiveEditor",
+        "when": "editorTextFocus && vim.mode != 'Insert'"
     },
 
     // Vimium-like change tabs
