@@ -279,13 +279,94 @@
             "commands": [
                 "workbench.action.keepEditor"
             ]
-        }
+        },
+        {
+            "before": [
+                "<leader>",
+                "v",
+                "i"
+            ],
+            "commands": [
+                "editor.action.smartSelect.grow"
+            ]
+        },
+        // Sort imports
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "i"
+            ],
+            "commands": [
+                "editor.action.organizeImports"
+            ]
+        },
+        // Fold Code
+        {
+            "before":[
+                "<leader>",
+                "f",
+                "d"
+            ],
+            "commands": [
+                "editor.foldRecursively"
+            ]
+        },
+        {
+            "before":[
+                "<leader>",
+                "u",
+                "f"
+            ],
+            "commands": [
+                "editor.unfoldRecursively"
+            ]
+        },
+        {
+            "before":[
+                "<leader>",
+                "f",
+                "a"
+            ],
+            "commands": [
+                "editor.foldAll"
+            ]
+        },
+        {
+            "before":[
+                "<leader>",
+                "u",
+                "f",
+                "a"
+            ],
+            "commands": [
+                "editor.unfoldAll"
+            ]
+        },
 
     ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "g"
+            ],
+            "commands": [
+                "editor.action.smartSelect.grow"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s"
+            ],
+            "commands": [
+                "editor.action.smartSelect.shrink"
+            ]
+        }
+    ],
     "editor.lineNumbers": "on",
-    "workbench.activityBar.visible": false,
     "editor.renderWhitespace": "all",
-    "editor.minimap.enabled": false,
     "extensions.ignoreRecommendations": true,
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "explorer.confirmDelete": false,
@@ -295,4 +376,50 @@
     "trailing-spaces.backgroundColor": "rgba(255,0,0,0.5)",
     "trailing-spaces.borderColor": "rgba(255,255,0,0.5)",
     "trailing-spaces.trimOnSave": true,
+    "git.ignoreMissingGitWarning": true,
+    "cSpell.userWords": [
+        "awsapigateway",
+        "awslog",
+        "awslogs",
+        "boto",
+        "cicd",
+        "dynatrace",
+        "entreleadership",
+        "esmodule",
+        "everydollar",
+        "faas",
+        "Fargate",
+        "financialwellness",
+        "firelens",
+        "innersource",
+        "jwks",
+        "lampogroup",
+        "loggly",
+        "logglytoken",
+        "martech",
+        "mulesoft",
+        "newrelic",
+        "PGPORT",
+        "powertools",
+        "pulumi",
+        "pytest",
+        "realestate",
+        "Redrive",
+        "rscom",
+        "scaffolder",
+        "smartdollar",
+        "teamname",
+        "tfstate",
+        "unvalidated",
+        "websystems"
+    ],
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "editor.minimap.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.scrollback": 20000,
+    "liveshare.anonymousGuestApproval": "reject",
+    "workbench.activityBar.visible": false,
+    "vim.foldfix": true,
 }
