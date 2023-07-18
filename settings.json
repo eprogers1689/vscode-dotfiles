@@ -343,7 +343,19 @@
                 "editor.unfoldAll"
             ]
         },
-
+        // Open all open buffers
+        {
+            "before": [
+                "<leader>",
+                "b"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.quickOpen",
+                    "args": ["edt "]
+                }
+            ]
+        },
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         {

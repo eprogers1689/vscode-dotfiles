@@ -130,5 +130,17 @@
         "key": "ctrl+shift+enter",
         "command": "workbench.action.terminal.runSelectedText",
         "when": "editorTextFocus && editorHasSelection"
-    }
+    },
+    // "ctrl+j": Selects the next item in the Quick Open dialog when it is open.
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    // "ctrl+k": Selects the previous item in the Quick Open dialog when it is open.
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
 ]
