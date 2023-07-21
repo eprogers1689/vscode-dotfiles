@@ -98,7 +98,7 @@
                 "breadcrumbs.toggle"
             ],
         },
-        // Find and Repalce
+        // Find and Replace
         {
             "before": [
                 "<leader>",
@@ -358,6 +358,22 @@
         },
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
+        // Find and Replace in selection
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "r"
+            ],
+            "commands": [
+                {
+                    "command": "editor.action.startFindReplaceAction"
+                },
+                {
+                    "command": "toggleFindInSelection"
+                }
+            ]
+        },
         {
             "before": [
                 "<leader>",
