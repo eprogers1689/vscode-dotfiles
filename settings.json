@@ -54,6 +54,16 @@
                 "workbench.files.action.focusFilesExplorer"
             ],
         },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ],
+        },
         // Easy way to hide the peksy activitybar... boo activity bar
         {
             "before": [
