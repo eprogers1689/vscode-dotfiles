@@ -366,6 +366,16 @@
                 }
             ]
         },
+        {
+            "before": [
+                "<leader>",
+                "t",
+                "t"
+            ],
+            "commands": [
+                "editor.action.showHover"
+            ]
+        }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         // Find and Replace in selection
@@ -458,6 +468,6 @@
     "security.workspace.trust.untrustedFiles": "open",
     "terminal.integrated.scrollback": 20000,
     "liveshare.anonymousGuestApproval": "reject",
-    "workbench.activityBar.visible": false,
     "vim.foldfix": true,
+    "workbench.activityBar.visible": false,
 }
