@@ -57,8 +57,8 @@
         {
             "before": [
                 "<leader>",
-                "t",
-                "t"
+                "r",
+                "r"
             ],
             "commands": [
                 "workbench.action.toggleSidebarVisibility"
@@ -373,7 +373,7 @@
                 "t"
             ],
             "commands": [
-                "editor.action.showHover"
+                "editor.action.showHover",
             ]
         }
     ],
