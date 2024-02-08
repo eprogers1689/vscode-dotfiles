@@ -470,4 +470,5 @@
     "liveshare.anonymousGuestApproval": "reject",
     "vim.foldfix": true,
     "workbench.activityBar.visible": false,
+    "files.autoSave": "onFocusChange"
 }
